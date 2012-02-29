@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+<link href='http://twitter.github.com/bootstrap/assets/css/bootstrap.css' media='all' rel='stylesheet' type='text/css' />  
+  <%= csrf_meta_tags %>
+  <%=yield :head %>
+</head>
+<body>
+<p>Header information</p>
+<%= yield %>
+
+</body>
+</html>
